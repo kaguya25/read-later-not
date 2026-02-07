@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リンクをメモに保存</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>リンクをメモに保存</h1>
+
+        <div class="form-group">
+            <label for="url">URL</label>
+            <input type="url" id="url" placeholder="https://example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="memo">メモ</label>
+            <textarea id="memo" placeholder="このリンクについてメモを入力..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="tags">タグ（カンマ区切り）</label>
+            <input type="text" id="tags" placeholder="技術, Chrome拡張, JavaScript">
+        </div>
+
+        <div class="button-group">
+            <button type="button" class="secondary" id="cancelBtn">キャンセル</button>
+            <button type="button" class="primary" id="saveBtn">保存</button>
+        </div>
+    </div>
+
+    <!-- トースト通知 -->
+    <div class="toast" id="successMessage">
+        ✓ 保存しました！
+    </div>
+
+    <script src="db-helper.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>

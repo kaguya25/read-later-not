@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="56" fill="url(#bgGrad)"/>
+  
+  <!-- Bookmark icon -->
+  <path d="M 45 35 L 45 85 L 64 75 L 83 85 L 83 35 Z" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Clock icon (small, bottom right) -->
+  <circle cx="80" cy="90" r="14" fill="#10b981" stroke="#ffffff" stroke-width="2"/>
+  <path d="M 80 83 L 80 90 L 85 95" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none"/>
+</svg>

@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "あとで読む（読まない）",
+  "version": "1.0.0",
+  "description": "リンクをメモと共にMarkdownファイルに保存（保存して満足するやつ）",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "viewer.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
